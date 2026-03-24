@@ -1,0 +1,33 @@
+* there should be an option to to view the expense.csv file using the terminal and it should give access to that using the main menu only.
+* There should be category wise summary, how much i spent in that specific category
+* there should be an option to generate the monthly report from the main menu.
+* There should be option to search the expense, or option to filter the expenses with date, category and date-category.
+* data backup ?? dont know the implementation.
+* Option to exit directly.
+
+
+
+
+
+
+
+
+
+csv to pdf report: conversion
+import pandas as pd
+import pdfkit
+
+# Read the CSV file into a pandas DataFrame
+df = pd.read_csv('your_input_file.csv')
+
+# Convert the DataFrame to an HTML table string
+html_output = df.to_html()
+
+# (Optional) configure path to wkhtmltopdf executable if needed (e.g., on Linux/macOS)
+# config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
+
+# Convert the HTML string to a PDF file
+# Use 'configuration=config' in the function call if you set a custom path
+pdfkit.from_string(html_output, 'output_report.pdf')
+
+print("CSV file successfully converted to PDF.")
