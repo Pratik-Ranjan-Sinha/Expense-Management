@@ -1,4 +1,6 @@
 from file_manager import fileManager
+from ViewExpense import ViewExpense
+from CategoryWise_ExpenseView import CategoryWise_ExpenseView
 
 def Header():
     for i in range(50):
@@ -21,9 +23,9 @@ def mainMenu():
         case 1:
             fileManager() # Class of file_manager.py
         case 2:
-            pass
+            ViewExpense()
         case 3:
-            pass
+            CategoryWise_ExpenseView()
         case 4:
             pass
         case 5:
