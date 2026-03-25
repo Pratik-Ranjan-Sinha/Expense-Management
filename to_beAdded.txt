@@ -31,3 +31,7 @@ html_output = df.to_html()
 pdfkit.from_string(html_output, 'output_report.pdf')
 
 print("CSV file successfully converted to PDF.")
+
+to create an enviornment -> open cmd in the same directory and use -> python -m venv myEnv
+to open the enviornment use -> myEnv\Scripts\activate.bat
+to get the requirements from txt use -> pip install -r requirements.txt
