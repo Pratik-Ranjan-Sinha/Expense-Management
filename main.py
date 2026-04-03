@@ -1,6 +1,7 @@
 from file_manager import fileManager
 from ViewExpense import ViewExpense
 from CategoryWise_ExpenseView import CategoryWise_ExpenseView
+from Monthly_report import report
 
 def Header():
     for i in range(50):
@@ -27,7 +28,7 @@ def mainMenu():
         case 3:
             CategoryWise_ExpenseView()
         case 4:
-            pass
+            report()
         case 5:
             pass
         case 6:

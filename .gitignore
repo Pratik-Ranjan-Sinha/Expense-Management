@@ -1,1 +1,4 @@
 myEnv/
+test.py
+__pycache__/
+to_beAdded.txt
