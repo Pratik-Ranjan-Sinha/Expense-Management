@@ -11,7 +11,7 @@ class CategoryWise_ExpenseView:
             for i in range(50):
                 print("=", end="")
             
-            Category=input("\nenter your category to be viewed(Food/Transport/Entertainment/Shopping/Other)!!")
+            Category=input("\nEnter your category to be viewed(Food/Transport/Entertainment/Shopping/Other): ")
             if Category=="Food" or Category=="Transport" or Category=="Entertainment" or Category=="Shopping" or Category=="Other":
                 for row in reader:
                     c=row[1]

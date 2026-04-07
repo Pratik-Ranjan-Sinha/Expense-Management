@@ -2,3 +2,6 @@ myEnv/
 test.py
 __pycache__/
 to_beAdded.txt
+reports.py
+utils.py
+menu.py
