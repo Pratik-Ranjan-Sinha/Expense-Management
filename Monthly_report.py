@@ -10,6 +10,7 @@ import string
 class report:
     def __init__(self):
         month = int(input("Enter month number (1-12): "))
+        ye=int(input("Enter the year of the month to be displayed!!"))
 
         print("=" * 50)
         print("\tMonthly Report")
@@ -29,9 +30,10 @@ class report:
         found = False
         for row in reader:
             date = row[2]
-            m = int(date[5:7])
+            m = int(date[5:7])   #extracted month
+            year=int(date[0:4]) #extracted year
 
-            if m == month:
+            if m == month and year == ye:
                 found = True
 
                 pdf.drawString(100, Y, f"Amount: {row[0]}")
